@@ -238,9 +238,8 @@
       <!-- header top end -->
 
       <!-- navbar start -->
-      <div
-        class="transition-all duration-500 sticky-header z-medium dark:bg-whiteColor-dark"
-      >
+      <div class="transition-all duration-500 sticky-header z-medium bg-transparent dark:bg-transparent">
+
         <nav>
           <div
             class="py-15px lg:py-0 px-15px lg:container 3xl:container-secondary-lg 4xl:container mx-auto relative"
@@ -687,32 +686,29 @@
             <div class="swiper-button-prev"></div>
           </div>
         </div>
-        <div
-          
-          class="swiper university__slider__thumb absolute bottom-5"
-        >
+        <div class="swiper university__slider__thumb absolute bottom-5">
           <div class="swiper-wrapper flex justify-center">
             <div class="swiper-slide cursor-pointer max-w-150px rounded-lg2">
-              <img
+              <!-- <img
                 class="w-full rounded-lg2"
                 loading="lazy"  alt=""
                 src="./assets/images/herobanner/university_1.jpg"
                 
-              >
+              > -->
             </div>
             <div class="swiper-slide cursor-pointer max-w-150px rounded-lg2">
-              <img
+              <!-- <img
                 class="w-full rounded-lg2"
                 loading="lazy"  alt=""
                 src="./assets/images/herobanner/university_3.jpg"
-              >
+              > -->
             </div>
             <div class="swiper-slide cursor-pointer max-w-150px rounded-lg2">
-              <img
+              <!-- <img
                 class="w-full rounded-lg2"
                 loading="lazy"  alt=""
                 src="./assets/images/herobanner/university_2.jpg"
-              >
+              > -->
             </div>
           </div>
         </div>
@@ -821,29 +817,35 @@
       </section>
 
 <!-- Card Section with Proper Alignment and Padding -->
-<div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 20px; margin-top: 50px; padding: 20px;"
-     class="md:flex-row">
-  
-  <!-- First Card -->
+<div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 30px; margin-top: 50px; padding: 20px;" class="md:flex-row">
+
+  <!-- First Card: Learning Program -->
   <div class="text-whiteColor text-center shadow-lg"
-       style="background-color: #00488E; box-shadow: 0 0 50px 10px rgba(45, 144, 237, 0.15); border-radius: 12px; padding: 30px; width: 350px;">
-       <h3 class="text-2xl font-semibold mb-4">Request a Learning Program</h3>
-       <button class="font-semibold shadow-md transition" id="openStudentFormBtn" class="open-btn"
-            style="background: #ffffff; color: #00488E; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; transition: 0.3s; ;" 
-            id="openFormBtn1"
+       style="background-color: #00488E; box-shadow: 0 0 50px 10px rgba(45, 144, 237, 0.15); border-radius: 14px; padding: 45px 35px; width: 550px; min-height: 300px;">
+    <h3 class="text-3xl font-extrabold tracking-wide mb-4" style="color: #ffffff;">Request a Learning Program </h3>
+
+    <p class="text-white mb-6 text-base leading-relaxed">
+      A guided learning path to gain new skills, explore your interests, and strengthen your career foundation ideal for students and early learners.
+    </p>
+    <button class="font-semibold shadow-md transition"
+            id="openStudentFormBtn"
+            style="background: #ffffff; color: #00488E; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; transition: 0.3s;"
             onmouseover="this.style.background='#f3f4f6';" 
             onmouseout="this.style.background='#ffffff';">
       Register Now
     </button>
   </div>
 
-  <!-- Second Card -->
+  <!-- Second Card: Development Program -->
   <div class="text-whiteColor text-center shadow-lg"
-       style="background-color: #00488E; box-shadow: 0 0 50px 10px rgba(45, 144, 237, 0.15); border-radius: 12px; padding: 30px; width: 350px;">
-    <h3 class="text-2xl font-semibold mb-4">Request a Development Program</h3>
-    <button class="font-semibold shadow-md transition" id="openStaffFormBtn" class="open-btn"
-            style="background: #ffffff; color: #00488E; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; transition: 0.3s; " 
-            id="openFormBtn2"
+       style="background-color: #00488E; box-shadow: 0 0 50px 10px rgba(45, 144, 237, 0.15); border-radius: 14px; padding: 45px 35px; width: 550px; min-height: 300px;">
+    <h3 class="text-3xl font-extrabold tracking-wide mb-4" style="color: #ffffff;">Request a Development Program</h3>
+    <p class="text-white mb-6 text-base leading-relaxed">
+      Hands-on experience with real projects, tools, and mentorship perfect for developers who want to enhance their practical knowledge and build confidence.
+    </p>
+    <button class="font-semibold shadow-md transition"
+            id="openStaffFormBtn"
+            style="background: #ffffff; color: #00488E; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; transition: 0.3s;"
             onmouseover="this.style.background='#f3f4f6';" 
             onmouseout="this.style.background='#ffffff';">
       Register Now
@@ -851,6 +853,8 @@
   </div>
 
 </div>
+
+
 
 <!-- Student Form -->
 <div id="studentFormContainer" class="form-container">
@@ -1486,108 +1490,123 @@
               </button>
             </div>
             <div class="tab-contents">
-              <div>
-                <p
-                  class="text-contentColor dark:text-contentColor-dark mb-25px"
-                >
-                Welcome to Navi Digital Academy, a premier institution shaping the next generation of IT professionals. Founded in August 2022 under Navi Promotions, we specialize in cutting-edge IT education and digital skills training, bridging the gap between academia and industry. Our diverse programs—guest lectures, seminars, hands-on workshops, certification courses, and internships—equip learners with real-world expertise in AI, cybersecurity, software development, digital marketing, and emerging technologies. Committed to empowering individuals with industry-relevant knowledge, we foster a technology-driven learning ecosystem that drives career success. Through strategic collaborations with colleges, universities, and tech enterprises, we provide practical experience, job-ready skills, and exclusive industry exposure, preparing learners for a thriving IT career.
-              </p>
-                <img
-                  src="./assets/images/about/overview.jpg"
-                  alt=""
-                  class="w-full"
-                >
+
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-25px">
+                <!-- Text Column -->
+                <div data-aos="fade-right">
+                  <h4 class="text-xl md:text-2xl font-bold mb-4 text-primaryColor">
+                    Welcome to Kalanjiyam
+                  </h4>
+                  <p class="text-contentColor dark:text-contentColor-dark mb-5 leading-relaxed">
+                    Kalanjiyam is a premier institution shaping the next generation of IT professionals. 
+                    We offer industry-aligned programs including guest lectures, hands-on workshops, certifications, and internships.
+                  </p>
+                  <ul class="list-disc ml-6 text-contentColor dark:text-contentColor-dark space-y-2">
+                    <li class="flex items-center group">
+                      <i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"></i>
+                      <p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">
+                        Founded in August 2022 under Navi Promotions
+                      </p>
+                    </li>
+                    <li class="flex items-center group">
+                      <i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"></i>
+                      <p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">
+                        Specializes in AI, Cybersecurity, Digital Marketing, and more
+                      </p>
+                    </li>
+                    <li class="flex items-center group">
+                      <i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"></i>
+                      <p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Bridges academic and industry skills with real-world training
+                      </p>
+                    </li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">
+                        Builds confidence and communication skills for tech careers
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Image Column -->
+                <div data-aos="fade-left">
+                  <img src="./assets/images/about/overview.jpg" alt="Overview Image" class="w-full rounded-lg shadow-lg" />
+                </div>
               </div>
 
-              <div class="hidden">
-                <p
-                  class="text-contentColor dark:text-contentColor-dark mb-25px"
-                >
-                Our mission is to build a technology-driven learning ecosystem that empowers individuals with industry-relevant skills and expertise to excel in the ever-evolving IT landscape. We strive to bridge the gap between academic learning and industry demands through innovative education, hands-on training, and real-world exposure.              </p>
-                <img
-                  src="./assets/images/about/mission1.jpg"
-                  alt=""
-                  class="w-full"
-                >
+
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-25px hidden">
+                <!-- Text Column -->
+                <div data-aos="fade-right">
+                  <h4 class="text-xl md:text-2xl font-bold mb-4 text-primaryColor">
+                    Our Mission
+                  </h4>
+                  <p class="text-contentColor dark:text-contentColor-dark mb-5 leading-relaxed">
+                    At Kalanjiyam, our mission is to create a transformative learning environment that equips individuals with the skills and confidence needed to thrive in the dynamic IT world. We aim to close the gap between academic theory and industry expectations through practical, real-time education.
+                  </p>
+                  <ul class="list-disc ml-6 text-contentColor dark:text-contentColor-dark space-y-2">
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Deliver industry-focused training with real-world exposure</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Empower learners through continuous mentorship and guidance</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Promote innovation and leadership in digital technologies</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Nurture future-ready professionals with practical skills</p></li>
+                  </ul>
+                </div>
+
+                <!-- Image Column -->
+                <div data-aos="fade-left">
+                  <img src="./assets/images/about/mission1.jpg" alt="Mission Image" class="w-full rounded-lg shadow-lg" />
+                </div>
               </div>
 
-              <div class="hidden">
-                <p
-                  class="text-contentColor dark:text-contentColor-dark mb-25px"
-                >
-                Our vision is to be a pioneering IT education provider, shaping the future of tech professionals through innovative learning, industry collaborations, and practical skill development. We aim to bridge the gap between academia and industry by offering cutting-edge training programs, hands-on experience, and real-world exposure, ensuring our learners stay ahead in the fast-evolving digital landscape.
-                </p>
-                <img
-                  src="./assets/images/about/vision.jpg"
-                  alt=""
-                  class="w-full"
-                >
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-25px hidden">
+                <!-- Text Column -->
+                <div data-aos="fade-right">
+                  <h4 class="text-xl md:text-2xl font-bold mb-4 text-primaryColor">
+                    Our Vision
+                  </h4>
+                  <p class="text-contentColor dark:text-contentColor-dark mb-5 leading-relaxed">
+                    Kalanjiyam envisions a world where aspiring minds become tech pioneers through accessible, impactful, and future-centric IT education. We aim to lead the transformation of digital learning in India and beyond.
+                  </p>
+                  <ul class="list-disc ml-6 text-contentColor dark:text-contentColor-dark space-y-2">
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Be a national leader in emerging tech education</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Drive innovation through hands-on and hybrid learning</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Create a global network of empowered tech professionals</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Inspire students to become changemakers in the digital era</p></li>
+                  </ul>
+                </div>
+
+                <!-- Image Column -->
+                <div data-aos="fade-left">
+                  <img src="./assets/images/about/vision.jpg" alt="Vision Image" class="w-full rounded-lg shadow-lg" />
+                </div>
               </div>
+
               <!-- certifications  -->
-              <div class="hidden">
-                <p
-                  class="text-contentColor dark:text-contentColor-dark mb-25px"
-                >
-                At Navi Digital Academy, we are committed to providing high-quality IT education that bridges the gap between academic learning and industry demands. Our programs are designed to equip students with cutting-edge skills, hands-on experience, and expert guidance, ensuring they stay ahead in the fast-evolving tech landscape. Whether you're looking to advance your career in AI, cybersecurity, software development, or digital marketing, we offer the right blend of theory, practical training, and industry exposure to help you succeed.
-              </p>
-                <ul class="space-y-3 grid grid-cols-1 lg:grid-cols-2 mb-25px">
-                  <li class="flex items-center group">
-                    <i
-                      class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"
-                    ></i>
-                    <p
-                      class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark"
-                     >
-                     Designed to match real-world IT trends and business needs
-                    </p>
-                  </li>
-                  <li class="flex items-center group">
-                    <i
-                      class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"
-                    ></i>
-                    <p
-                      class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark"
-                     >
-                     Learn from seasoned IT professionals and industry leaders.
-                    </p>
-                  </li>
-                  <li class="flex items-center group">
-                    <i
-                      class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"
-                    ></i>
-                    <p
-                      class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark"
-                     >
-                     Gain practical experience through live projects and internships.
-                    </p>
-                  </li>
-                  <li class="flex items-center group">
-                    <i
-                      class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"
-                    ></i>
-                    <p
-                      class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark"
-                     >
-                     Develop in-demand skills for high-growth IT careers.
-                    </p>
-                  </li>
-                  <li class="flex items-center group">
-                    <i
-                      class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 bg-opacity-40 group-hover:bg-primaryColor group-hover:text-white group-hover:opacity-100 mr-15px dark:bg-whitegrey1-dark"
-                    ></i>
-                    <p
-                      class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark"
-                     >
-                     Partnered with top colleges, universities, and tech enterprises.
-                    </p>
-                  </li>
-                </ul>
-                <img
-                  src="./assets/images/about/why.jpg"
-                  alt=""
-                  class="w-full"
-                >
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-25px hidden">
+                <!-- Text Column -->
+                <div data-aos="fade-right">
+                  <h4 class="text-xl md:text-2xl font-bold mb-4 text-primaryColor">
+                    Why Choose Kalanjiyam?
+                  </h4>
+                  <p class="text-contentColor dark:text-contentColor-dark mb-5 leading-relaxed">
+                    Kalanjiyam stands out as a trusted IT education provider focused on quality, practicality, and career-building. Our programs are crafted to match modern tech needs while being accessible to every aspiring learner.
+                  </p>
+                  <ul class="list-disc ml-6 text-contentColor dark:text-contentColor-dark space-y-2">
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Curriculum aligned with latest industry trends</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Expert instructors with proven IT expertise</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Hands-on learning with real-time projects</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Strong placement support and industry connections</p></li>
+                    <li class="flex items-center group"><i class="icofont-check px-2 py-2 text-primaryColor bg-whitegrey3 group-hover:bg-primaryColor group-hover:text-white mr-15px dark:bg-whitegrey1-dark"></i><p class="text-sm md:text-base font-medium text-blackColor dark:text-blackColor-dark">Collaborations with top colleges and tech firms</p></li>
+                  </ul>
+                </div>
+
+                <!-- Image Column -->
+                <div data-aos="fade-left">
+                  <img src="./assets/images/about/why.jpg" alt="Why Choose Us" class="w-full rounded-lg shadow-lg" />
+                </div>
               </div>
+
             </div>
           </div>
           <!-- overview counter -->
@@ -1595,6 +1614,946 @@
       </section>
 
       <!-- featured section -->
+      <!-- <section>
+        <div
+          class="pt-50px pb-10 md:pt-70px md:pb-50px lg:pt-20 2xl:pt-100px 2xl:pb-70px bg-whiteColor dark:bg-whiteColor-dark"
+        >
+          <div class="filter-container container">
+            <div
+              class="flex gap-15px lg:gap-30px flex-wrap lg:flex-nowrap items-center"
+            >
+              
+              <div class="basis-full lg:basis-[500px]" data-aos="fade-up">
+                <span
+                  class="text-sm font-semibold text-primaryColor bg-whitegrey3 px-6 py-5px mb-5 rounded-full inline-block"
+                >
+                  Course List
+                </span>
+                <h3
+                  class="text-3xl md:text-[35px] lg:text-size-42 leading-[45px] 2xl:leading-[45px] md:leading-[50px] font-bold text-blackColor dark:text-blackColor-dark"
+                  data-aos="fade-up"
+                >
+                  Perfect Online Course Your Carrer
+                </h3>
+              </div>
+             
+              <div class="basis-full lg:basis-[700px]">
+                <ul
+                  class="filter-controllers flex flex-wrap sm:flex-nowrap justify-start lg:justify-end button-group filters-button-group"
+                  data-aos="fade-up"
+                >
+                  <li>
+                    <button
+                      data-filter="*"
+                      class="is-checked dark:is-checked pr-5 md:pr-10 lg:pr-17px 2xl:pr-10 text-contentColor font-medium hover:text-primaryColor dark:text-contentColor-dark dark:hover:text-primaryColor"
+                    >
+                      See All
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      data-filter=".filter1"
+                      class="pr-5 md:pr-10 lg:pr-17px 2xl:pr-10 text-contentColor font-medium hover:text-primaryColor dark:text-contentColor-dark dark:hover:text-primaryColor"
+                    >
+                      Data science
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      data-filter=".filter2"
+                      class="pr-5 md:pr-10 lg:pr-17px 2xl:pr-10 text-contentColor font-medium hover:text-primaryColor dark:text-contentColor-dark dark:hover:text-primaryColor"
+                    >
+                      Engineering
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      data-filter=".filter3"
+                      class="pr-5 md:pr-10 lg:pr-17px 2xl:pr-10 text-contentColor font-medium hover:text-primaryColor dark:text-contentColor-dark dark:hover:text-primaryColor"
+                    >
+                      Featured
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      data-filter=".filter4"
+                      class="text-contentColor font-medium hover:text-primaryColor dark:text-contentColor-dark dark:hover:text-primaryColor"
+                    >
+                      Architecture
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            
+
+            <div
+              class="container p-0 filter-contents flex flex-wrap sm:-mx-15px mt-7 lg:mt-10"
+              data-aos="fade-up"
+            >
+              
+              <div
+                class="w-full sm:w-1/2 lg:w-1/3 group grid-item filter1 filter3"
+              >
+                <div class="tab-content-wrapper sm:px-15px mb-30px">
+                  <div
+                    class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark"
+                  >
+                    
+                    <div class="relative mb-4">
+                      <a
+                        href="course-details.html"
+                        class="w-full overflow-hidden rounded"
+                      >
+                        <img
+                          src="./assets/images/grid/grid_1.png"
+                          alt=""
+                          class="w-full transition-all duration-300 group-hover:scale-110"
+                        >
+                      </a>
+                      <div
+                        class="absolute left-0 top-1 flex justify-between w-full items-center px-2"
+                      >
+                        <div>
+                          <p
+                            class="text-xs text-whiteColor px-4 py-[3px] bg-secondaryColor rounded font-semibold"
+                          >
+                            Data & Tech
+                          </p>
+                        </div>
+                        <a
+                          class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor"
+                          href="#"
+                          ><i class="icofont-heart-alt text-base py-1 px-2"></i
+                        ></a>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="grid grid-cols-2 mb-15px">
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-book-alt pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                              >23 Lesson</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-clock-time pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                              >1 hr 30 min</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="course-details.html"
+                        class="text-xl font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor"
+                      >
+                        Foundation course to under stand about softwere
+                      </a>
+                     
+                      <div
+                        class="text-lg font-semibold text-primaryColor font-inter mb-4"
+                      >
+                        $32.00
+                        <del class="text-sm text-lightGrey4 font-semibold"
+                          >/ $67.00</del
+                        >
+                        <span class="ml-6"
+                          ><del
+                            class="text-base font-semibold text-secondaryColor3"
+                            >Free</del
+                          ></span
+                        >
+                      </div>
+                      
+                      <div
+                        class="grid grid-cols-1 md:grid-cols-2 pt-15px border-t border-borderColor"
+                      >
+                        <div>
+                          <a
+                            href="instructor-details.html"
+                            class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor"
+                            ><img
+                              class="w-[30px] h-[30px] rounded-full mr-15px"
+                              src="./assets/images/grid/grid_small_1.jpg"
+                              alt=""
+                            >
+                            <span class="flex">Micle john</span>
+                          </a>
+                        </div>
+                        <div class="text-start md:text-end">
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <span class="text-xs text-lightGrey6">(44)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div
+                class="w-full sm:w-1/2 lg:w-1/3 group grid-item filter2 filter3"
+              >
+                <div class="tab-content-wrapper sm:px-15px mb-30px">
+                  <div
+                    class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark"
+                  >
+                   
+                    <div class="relative mb-4">
+                      <a
+                        href="course-details.html"
+                        class="w-full overflow-hidden rounded"
+                      >
+                        <img
+                          src="./assets/images/grid/grid_2.png"
+                          alt=""
+                          class="w-full transition-all duration-300 group-hover:scale-110"
+                        >
+                      </a>
+                      <div
+                        class="absolute left-0 top-1 flex justify-between w-full items-center px-2"
+                      >
+                        <div>
+                          <p
+                            class="text-xs text-whiteColor px-4 py-[3px] bg-blue rounded font-semibold"
+                          >
+                            Mechanical
+                          </p>
+                        </div>
+                        <a
+                          class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor"
+                          href="#"
+                          ><i class="icofont-heart-alt text-base py-1 px-2"></i
+                        ></a>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="grid grid-cols-2 mb-15px">
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-book-alt pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                              >29 Lesson</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-clock-time pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                              >2 hr 10 min</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="course-details.html"
+                        class="text-xl font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor"
+                      >
+                        Nidnies course to under stand about softwere
+                      </a>
+                      
+                      <div
+                        class="text-lg font-semibold text-primaryColor font-inter mb-4"
+                      >
+                        $32.00
+                        <del class="text-sm text-lightGrey4 font-semibold"
+                          >/ $67.00</del
+                        >
+                        <span class="ml-6"
+                          ><del class="text-base font-semibold text-greencolor"
+                            >Free</del
+                          ></span
+                        >
+                      </div>
+                     
+                      <div
+                        class="grid grid-cols-1 md:grid-cols-2 pt-15px border-t border-borderColor"
+                      >
+                        <div>
+                          <a
+                            href="instructor-details.html"
+                            class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor"
+                            ><img
+                              class="w-[30px] h-[30px] rounded-full mr-15px"
+                              src="./assets/images/grid/grid_small_2.jpg"
+                              alt=""
+                            >Rinis Jhon
+                          </a>
+                        </div>
+                        <div class="text-start md:text-end">
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <span class="text-xs text-lightGrey6">(44)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+             
+              <div
+                class="w-full sm:w-1/2 lg:w-1/3 group grid-item filter4 filter5"
+              >
+                <div class="tab-content-wrapper sm:px-15px mb-30px">
+                  <div
+                    class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark"
+                  >
+                    
+                    <div class="relative mb-4">
+                      <a
+                        href="course-details.html"
+                        class="w-full overflow-hidden rounded"
+                      >
+                        <img
+                          src="./assets/images/grid/grid_3.png"
+                          alt=""
+                          class="w-full transition-all duration-300 group-hover:scale-110"
+                        >
+                      </a>
+                      <div
+                        class="absolute left-0 top-1 flex justify-between w-full items-center px-2"
+                      >
+                        <div>
+                          <p
+                            class="text-xs text-whiteColor px-4 py-[3px] bg-secondaryColor2 rounded font-semibold"
+                          >
+                            Development
+                          </p>
+                        </div>
+                        <a
+                          class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor"
+                          href="#"
+                          ><i class="icofont-heart-alt text-base py-1 px-2"></i
+                        ></a>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="grid grid-cols-2 mb-15px">
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-book-alt pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                            >
+                              25 Lesson</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-clock-time pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                            >
+                              1 hr 40 min</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="course-details.html"
+                        class="text-xl font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor"
+                      >
+                        Minws course to under stand about solution
+                      </a>
+                      
+                      <div
+                        class="text-lg font-semibold text-primaryColor font-inter mb-4"
+                      >
+                        $40.00
+                        <del class="text-sm text-lightGrey4 font-semibold"
+                          >/ $67.00</del
+                        >
+                        <span class="ml-6"
+                          ><del
+                            class="text-base font-semibold text-secondaryColor3"
+                            >Free</del
+                          ></span
+                        >
+                      </div>
+                     
+                      <div
+                        class="grid grid-cols-1 md:grid-cols-2 pt-15px border-t border-borderColor"
+                      >
+                        <div>
+                          <a
+                            href="instructor-details.html"
+                            class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor"
+                            ><img
+                              class="w-[30px] h-[30px] rounded-full mr-15px"
+                              src="./assets/images/grid/grid_small_3.jpg"
+                              alt=""
+                            >Micle John
+                          </a>
+                        </div>
+                        <div class="text-start md:text-end">
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <span class="text-xs text-lightGrey6">(44)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="w-full sm:w-1/2 lg:w-1/3 group grid-item filter4">
+                <div class="tab-content-wrapper sm:px-15px mb-30px">
+                  <div
+                    class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark"
+                  >
+                   
+                    <div class="relative mb-4">
+                      <a
+                        href="course-details.html"
+                        class="w-full overflow-hidden rounded"
+                      >
+                        <img
+                          src="./assets/images/grid/grid_4.png"
+                          alt=""
+                          class="w-full transition-all duration-300 group-hover:scale-110"
+                        >
+                      </a>
+                      <div
+                        class="absolute left-0 top-1 flex justify-between w-full items-center px-2"
+                      >
+                        <div>
+                          <p
+                            class="text-xs text-whiteColor px-4 py-[3px] bg-greencolor2 rounded font-semibold"
+                          >
+                            Ui & UX Design
+                          </p>
+                        </div>
+                        <a
+                          class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor"
+                          href="#"
+                          ><i class="icofont-heart-alt text-base py-1 px-2"></i
+                        ></a>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="grid grid-cols-2 mb-15px">
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-book-alt pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                            >
+                              36 Lesson</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-clock-time pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                              >3 hr 40 min</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="course-details.html"
+                        class="text-xl font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor"
+                      >
+                        Design course to under stand about solution
+                      </a>
+                      
+                      <div
+                        class="text-lg font-semibold text-primaryColor font-inter mb-4"
+                      >
+                        $40.00
+                        <del class="text-sm text-lightGrey4 font-semibold"
+                          >/ $67.00</del
+                        >
+                        <span class="ml-6"
+                          ><del
+                            class="text-base font-semibold text-secondaryColor3"
+                            >Free</del
+                          ></span
+                        >
+                      </div>
+                      
+                      <div
+                        class="grid grid-cols-1 md:grid-cols-2 pt-15px border-t border-borderColor"
+                      >
+                        <div>
+                          <a
+                            href="instructor-details.html"
+                            class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor"
+                            ><img
+                              class="w-[30px] h-[30px] rounded-full mr-15px"
+                              src="./assets/images/grid/grid_small_4.jpg"
+                              alt=""
+                            >
+                            <span class="flex flex-shrink-0">Micle Robin</span>
+                          </a>
+                        </div>
+                        <div class="text-start md:text-end">
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <span class="text-xs text-lightGrey6">(44)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div
+                class="w-full sm:w-1/2 lg:w-1/3 group group grid-item filter1 filter3"
+              >
+                <div class="tab-content-wrapper sm:px-15px mb-30px">
+                  <div
+                    class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark"
+                  >
+                    
+                    <div class="relative mb-4">
+                      <a
+                        href="course-details.html"
+                        class="w-full overflow-hidden rounded"
+                      >
+                        <img
+                          src="./assets/images/grid/grid_5.png"
+                          alt=""
+                          class="w-full transition-all duration-300 group-hover:scale-110"
+                        >
+                      </a>
+                      <div
+                        class="absolute left-0 top-1 flex justify-between w-full items-center px-2"
+                      >
+                        <div>
+                          <p
+                            class="text-xs text-whiteColor px-4 py-[3px] bg-orange rounded font-semibold"
+                          >
+                            Data & Tech
+                          </p>
+                        </div>
+                        <a
+                          class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor"
+                          href="#"
+                          ><i class="icofont-heart-alt text-base py-1 px-2"></i
+                        ></a>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="grid grid-cols-2 mb-15px">
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-book-alt pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                              >36 Lesson</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-clock-time pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                              >3 hr 40 min</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="course-details.html"
+                        class="text-xl font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor"
+                      >
+                        Data course to under stand about solution
+                      </a>
+                      
+                      <div
+                        class="text-lg font-semibold text-primaryColor font-inter mb-4"
+                      >
+                        $40.00
+                        <del class="text-sm text-lightGrey4 font-semibold"
+                          >/ $67.00</del
+                        >
+                        <span class="ml-6"
+                          ><del
+                            class="text-base font-semibold text-secondaryColor3"
+                            >Free</del
+                          ></span
+                        >
+                      </div>
+                      
+                      <div
+                        class="grid grid-cols-1 md:grid-cols-2 pt-15px border-t border-borderColor"
+                      >
+                        <div>
+                          <a
+                            href="instructor-details.html"
+                            class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor"
+                            ><img
+                              class="w-[30px] h-[30px] rounded-full mr-15px"
+                              src="./assets/images/grid/grid_small_1.jpg"
+                              alt=""
+                            >
+                            <span class="flex flex-shrink-0">Micle Robin</span>
+                          </a>
+                        </div>
+                        <div class="text-start md:text-end">
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <span class="text-xs text-lightGrey6">(44)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div
+                class="w-full sm:w-1/2 lg:w-1/3 group grid-item filter2 filter5"
+              >
+                <div class="tab-content-wrapper sm:px-15px mb-30px">
+                  <div
+                    class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark"
+                  >
+                   
+                    <div class="relative mb-4">
+                      <a
+                        href="course-details.html"
+                        class="w-full overflow-hidden rounded"
+                      >
+                        <img
+                          src="./assets/images/grid/grid_6.png"
+                          alt=""
+                          class="w-full transition-all duration-300 group-hover:scale-110"
+                        >
+                      </a>
+                      <div
+                        class="absolute left-0 top-1 flex justify-between w-full items-center px-2"
+                      >
+                        <div>
+                          <p
+                            class="text-xs text-whiteColor px-4 py-[3px] bg-yellow rounded font-semibold"
+                          >
+                            Big Data
+                          </p>
+                        </div>
+                        <a
+                          class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor"
+                          href="#"
+                          ><i class="icofont-heart-alt text-base py-1 px-2"></i
+                        ></a>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="grid grid-cols-2 mb-15px">
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-book-alt pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                            >
+                              30 Lesson</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div>
+                            <i
+                              class="icofont-clock-time pr-5px text-primaryColor text-lg"
+                            ></i>
+                          </div>
+                          <div>
+                            <span
+                              class="text-sm text-black dark:text-blackColor-dark"
+                              >3 hr 40 min</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="course-details.html"
+                        class="text-xl font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor"
+                      >
+                        Big data to under stand about solution pacage
+                      </a>
+                     
+                      <div
+                        class="text-lg font-semibold text-primaryColor font-inter mb-4"
+                      >
+                        $40.00
+                        <del class="text-sm text-lightGrey4 font-semibold"
+                          >/ $67.00</del
+                        >
+                        <span class="ml-6"
+                          ><del
+                            class="text-base font-semibold text-secondaryColor3"
+                          >
+                            Free</del
+                          ></span
+                        >
+                      </div>
+                      
+                      <div
+                        class="grid grid-cols-1 md:grid-cols-2 pt-15px border-t border-borderColor"
+                      >
+                        <div>
+                          <a
+                            href="instructor-details.html"
+                            class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor"
+                            ><img
+                              class="w-[30px] h-[30px] rounded-full mr-15px"
+                              src="./assets/images/grid/grid_small_1.jpg"
+                              alt=""
+                            >
+                            <span class="flex flex-shrink-0">Micle Robin</span>
+                          </a>
+                        </div>
+                        <div class="text-start md:text-end">
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <i class="icofont-star text-size-15 text-yellow"></i>
+                          <span class="text-xs text-lightGrey6">(44)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Registration Sectoion-->
+      <section
+        class="bg-register bg-cover bg-center bg-no-repeat lg:mb-150px"
+        data-aos="fade-up"
+      >
+        <!-- registration overlay -->
+        <div
+          class="overlay bg-blueDark bg-opacity-90 py-20 lg:pt-[90px] lg:pb-0 relative z-0"
+        >
+          <!-- animate icons -->
+          <div>
+            <img
+              class="absolute top-0 left-0 lg:left-[8%] 2xl:top-10 animate-move-hor block z--1"
+              src="./assets/images/register/register__1.png"
+              alt=""
+            >
+            <img
+              class="absolute top-1/2 left-3/4 md:left-2/3 lg:left-1/2 2xl:left-[8%] md:top animate-spin-slow block z--1"
+              src="./assets/images/register/register__2.png"
+              alt=""
+            >
+            <img
+              class="absolute top-20 lg:top-3/4 md:top-14 right-20 md:right-20 lg:right-[90%] animate-move-var block z--1"
+              src="./assets/images/register/register__3.png"
+              alt=""
+            >
+          </div>
+          <div class="container">
+            <!-- about section  -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 pt-30px gap-x-30px">
+              <!-- about left -->
+              <div
+                class="mb-30px lg:mb-0 pb-0 md:pb-30px xl:pb-0 lg:col-start-1 lg:col-span-7"
+              >
+                <div class="relative">
+                  <span
+                    class="text-sm font-semibold text-primaryColor bg-whitegrey3 px-6 py-5px mb-5 rounded-full inline-block"
+                  >
+                    Registration
+                  </span>
+                  <h3
+                    class="text-3xl md:text-[35px] 2xl:text-size-42 leading-[45px] 2xl:leading-2xl font-bold text-whiteColor pb-25px"
+                  >
+                    Register Your
+                    <span
+                      class="relative after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-2 md:after:bottom-4 z-0 after:z-[-1]"
+                      >Account</span
+                    >
+                    Get free access to
+                    <span class="text-yellow1">60000 </span> online course
+                  </h3>
+                  <div class="flex gap-x-5 items-center">
+                    <div>
+                      <button
+                        data-url="https://www.youtube.com/watch?v=vHdclsdkp28"
+                        class="lvideo relative w-15 h-15 md:h-20 md:w-20 lg:w-15 lg:h-15 2xl:h-70px 2xl:w-70px 3xl:h-20 3xl:w-20 bg-secondaryColor rounded-full flex items-center justify-center"
+                      >
+                        <span
+                          class="animate-buble absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[180px] h-[180px] border-secondaryColor rounded-full"
+                        ></span
+                        ><span
+                          class="animate-buble2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[180px] h-[180px] border-secondaryColor rounded-full"
+                        ></span>
+                        <img src="./assets/images/icon/video.png" alt="" >
+                      </button>
+                    </div>
+
+                    <div>
+                      <p
+                        class="text-size-15 md:text-[22px] lg:text-lg 2xl:text-[22px] leading-6 md:leading-9 lg:leading-8 2xl:leading-9 font-semibold text-white"
+                      >
+                        Learn Something new & Build Your Career From Anywhere In
+                        The World
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- sbject right -->
+              <div
+                class="overflow-visible lg:col-start-8 lg:col-span-5 relative z-1 lg:-mb-150px"
+              >
+                <form
+                  class="p-35px pt-10 bg-lightGrey10 dark:bg-lightGrey10-dark rounded shadow-experience"
+                  data-aos="fade-up"
+                >
+                  <h3
+                    class="text-xl text-blackColor dark:text-blackColor-dark fon font-thint-semibold mb-5 font-inter"
+                  >
+                    Fill Your Registration
+                  </h3>
+
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
+                  >
+
+                  <div class="grid grid-cols-1 xl:grid-cols-2 xl:gap-x-30px">
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      class="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
+                    >
+
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      class="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Address"
+                    class="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
+                  >
+
+                  <textarea
+                   
+                    placeholder="Comment"
+                    class="w-full px-15px pb-3 pt-5 bg-lightGrey8 text-base mb-25px h-[155px] placeholder:text-blackColor"
+                    
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <div>
+                    <button
+                      type="submit"
+                      class="text-size-15 text-whiteColor bg-primaryColor px-25px py-10px border border-primaryColor hover:text-primaryColor hover:bg-whiteColor inline-block rounded group dark:hover:text-whiteColor dark:hover:bg-whiteColor-dark"
+                    >
+                      Sign Up
+                      <i
+                        class="icofont-long-arrow-right group-hover:text-primaryColor"
+                      ></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <br><br>
+      </section>
+
+
+
+       <!-- featured section -->
       <section>
         <div
           class="pt-50px pb-10 md:pt-70px md:pb-50px lg:pt-20 2xl:pt-100px 2xl:pb-70px bg-whiteColor dark:bg-whiteColor-dark"
@@ -2385,159 +3344,15 @@
         </div>
       </section>
 
-      <!-- Registration Sectoion-->
-      <section
-        class="bg-register bg-cover bg-center bg-no-repeat lg:mb-150px"
-        data-aos="fade-up"
-      >
-        <!-- registration overlay -->
-        <div
-          class="overlay bg-blueDark bg-opacity-90 py-20 lg:pt-[90px] lg:pb-0 relative z-0"
-        >
-          <!-- animate icons -->
-          <div>
-            <img
-              class="absolute top-0 left-0 lg:left-[8%] 2xl:top-10 animate-move-hor block z--1"
-              src="./assets/images/register/register__1.png"
-              alt=""
-            >
-            <img
-              class="absolute top-1/2 left-3/4 md:left-2/3 lg:left-1/2 2xl:left-[8%] md:top animate-spin-slow block z--1"
-              src="./assets/images/register/register__2.png"
-              alt=""
-            >
-            <img
-              class="absolute top-20 lg:top-3/4 md:top-14 right-20 md:right-20 lg:right-[90%] animate-move-var block z--1"
-              src="./assets/images/register/register__3.png"
-              alt=""
-            >
-          </div>
-          <div class="container">
-            <!-- about section  -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 pt-30px gap-x-30px">
-              <!-- about left -->
-              <div
-                class="mb-30px lg:mb-0 pb-0 md:pb-30px xl:pb-0 lg:col-start-1 lg:col-span-7"
-              >
-                <div class="relative">
-                  <span
-                    class="text-sm font-semibold text-primaryColor bg-whitegrey3 px-6 py-5px mb-5 rounded-full inline-block"
-                  >
-                    Registration
-                  </span>
-                  <h3
-                    class="text-3xl md:text-[35px] 2xl:text-size-42 leading-[45px] 2xl:leading-2xl font-bold text-whiteColor pb-25px"
-                  >
-                    Register Your
-                    <span
-                      class="relative after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-2 md:after:bottom-4 z-0 after:z-[-1]"
-                      >Account</span
-                    >
-                    Get free access to
-                    <span class="text-yellow1">60000 </span> online course
-                  </h3>
-                  <div class="flex gap-x-5 items-center">
-                    <div>
-                      <button
-                        data-url="https://www.youtube.com/watch?v=vHdclsdkp28"
-                        class="lvideo relative w-15 h-15 md:h-20 md:w-20 lg:w-15 lg:h-15 2xl:h-70px 2xl:w-70px 3xl:h-20 3xl:w-20 bg-secondaryColor rounded-full flex items-center justify-center"
-                      >
-                        <span
-                          class="animate-buble absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[180px] h-[180px] border-secondaryColor rounded-full"
-                        ></span
-                        ><span
-                          class="animate-buble2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[180px] h-[180px] border-secondaryColor rounded-full"
-                        ></span>
-                        <img src="./assets/images/icon/video.png" alt="" >
-                      </button>
-                    </div>
 
-                    <div>
-                      <p
-                        class="text-size-15 md:text-[22px] lg:text-lg 2xl:text-[22px] leading-6 md:leading-9 lg:leading-8 2xl:leading-9 font-semibold text-white"
-                      >
-                        Learn Something new & Build Your Career From Anywhere In
-                        The World
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- sbject right -->
-              <div
-                class="overflow-visible lg:col-start-8 lg:col-span-5 relative z-1 lg:-mb-150px"
-              >
-                <form
-                  class="p-35px pt-10 bg-lightGrey10 dark:bg-lightGrey10-dark rounded shadow-experience"
-                  data-aos="fade-up"
-                >
-                  <h3
-                    class="text-xl text-blackColor dark:text-blackColor-dark fon font-thint-semibold mb-5 font-inter"
-                  >
-                    Fill Your Registration
-                  </h3>
 
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    class="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                  >
-
-                  <div class="grid grid-cols-1 xl:grid-cols-2 xl:gap-x-30px">
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      class="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                    >
-
-                    <input
-                      type="text"
-                      placeholder="Phone"
-                      class="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                    >
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Address"
-                    class="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                  >
-
-                  <textarea
-                   
-                    placeholder="Comment"
-                    class="w-full px-15px pb-3 pt-5 bg-lightGrey8 text-base mb-25px h-[155px] placeholder:text-blackColor"
-                    
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                  <div>
-                    <button
-                      type="submit"
-                      class="text-size-15 text-whiteColor bg-primaryColor px-25px py-10px border border-primaryColor hover:text-primaryColor hover:bg-whiteColor inline-block rounded group dark:hover:text-whiteColor dark:hover:bg-whiteColor-dark"
-                    >
-                      Sign Up
-                      <i
-                        class="icofont-long-arrow-right group-hover:text-primaryColor"
-                      ></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <br><br>
-      </section>
       <!-- events  section -->
-      <section>
+      <!-- <section>
         <div class="overflow-hidden">
           <div
             class="container py-50px md:pt-60px lg:pt-50px lg:pb-20 2xl:pb-100px relative z-0"
           >
-            <!-- animated bg -->
+            
             <div
               class="absolute top-[20%] left-[-135px] z-[-1] animate-move-hor"
             >
@@ -2571,7 +3386,7 @@
                 </defs>
               </svg>
             </div>
-            <!-- heading -->
+            
             <div
               class="grid grid-cols-1 md:grid-cols-12 md:gap-30px items-center"
             >
@@ -2604,7 +3419,7 @@
               </div>
             </div>
 
-            <!-- event tabs -->
+            
             <div class="tab">
               <div
                 class="tab-links grid grid-cols-2 md:grid-cols-5 gap-11px text-blackColor text-lg lg:text-size-22 font-semibold font-hind bg-transparent mt-30px md:mt-0 mb-43px"
@@ -2619,6 +3434,7 @@
 
                   Monday
                 </button>
+                
                 <button
                   class="py-9px lg:py-6 hover:text-primaryColor dark:hover:text-primaryColor dark:text-whiteColor bg-lightGrey7 dark:bg-lightGrey7-dark hover:bg-white dark:hover:bg-whiteColor-dark relative group/btn hover:shadow-bottom dark:shadow-standard-dark disabled:cursor-pointer rounded-standard"
                 >
@@ -2656,17 +3472,17 @@
               </div>
 
               <div class="tab-contents">
-                <!-- Monday Event-->
+               
                 <div
                   class="block opacity-100 transition-opacity duration-150 ease-linear"
                 >
                   <div class="flex flex-col gap-y-6">
-                    <!-- event 1 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                     
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__1.png"
@@ -2674,7 +3490,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                      
                       <div class="py-18px">
                         <div>
                           <p
@@ -2713,7 +3529,7 @@
                       </div>
                     </div>
 
-                    <!-- event 2 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -2754,7 +3570,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                      
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -2766,12 +3582,12 @@
                       </div>
                     </div>
 
-                    <!-- event 3 -->
+                  
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                      
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__3.png"
@@ -2779,7 +3595,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                      
                       <div class="py-18px">
                         <div>
                           <p
@@ -2817,7 +3633,7 @@
                         </p>
                       </div>
                     </div>
-                    <!-- event 4 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -2858,7 +3674,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                      
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -2871,17 +3687,17 @@
                     </div>
                   </div>
                 </div>
-                <!-- Tuesday Event-->
+                
                 <div
                   class="opacity-100 transition-opacity duration-150 ease-linear hidden"
                 >
                   <div class="flex flex-col gap-y-6">
-                    <!-- event 1 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                      
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__4.png"
@@ -2889,7 +3705,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                    
                       <div class="py-18px">
                         <div>
                           <p
@@ -2928,7 +3744,7 @@
                       </div>
                     </div>
 
-                    <!-- event 2 -->
+                 
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -2969,7 +3785,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                     
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -2981,12 +3797,12 @@
                       </div>
                     </div>
 
-                    <!-- event 3 -->
+                   
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                      
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__3.png"
@@ -2994,7 +3810,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                      
                       <div class="py-18px">
                         <div>
                           <p
@@ -3032,7 +3848,7 @@
                         </p>
                       </div>
                     </div>
-                    <!-- event 4 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -3073,7 +3889,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                      
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -3086,17 +3902,17 @@
                     </div>
                   </div>
                 </div>
-                <!-- Wednesday Event-->
+                
                 <div
                   class="opacity-100 transition-opacity duration-150 ease-linear hidden"
                 >
                   <div class="flex flex-col gap-y-6">
-                    <!-- event 1 -->
+                   
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                      
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__4.png"
@@ -3104,7 +3920,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                      
                       <div class="py-18px">
                         <div>
                           <p
@@ -3143,7 +3959,7 @@
                       </div>
                     </div>
 
-                    <!-- event 2 -->
+                   
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -3184,7 +4000,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                      
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -3196,12 +4012,12 @@
                       </div>
                     </div>
 
-                    <!-- event 3 -->
+                   
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                      
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__3.png"
@@ -3209,7 +4025,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                      
                       <div class="py-18px">
                         <div>
                           <p
@@ -3247,7 +4063,7 @@
                         </p>
                       </div>
                     </div>
-                    <!-- event 4 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -3288,7 +4104,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                     
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -3301,17 +4117,17 @@
                     </div>
                   </div>
                 </div>
-                <!-- Thursday Event-->
+               
                 <div
                   class="opacity-100 transition-opacity duration-150 ease-linear hidden"
                 >
                   <div class="flex flex-col gap-y-6">
-                    <!-- event 1 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                     
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__4.png"
@@ -3319,7 +4135,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                     
                       <div class="py-18px">
                         <div>
                           <p
@@ -3358,7 +4174,7 @@
                       </div>
                     </div>
 
-                    <!-- event 2 -->
+                   
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -3399,7 +4215,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                     
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -3411,12 +4227,12 @@
                       </div>
                     </div>
 
-                    <!-- event 3 -->
+                   
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                     
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__3.png"
@@ -3424,7 +4240,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                     
                       <div class="py-18px">
                         <div>
                           <p
@@ -3462,7 +4278,7 @@
                         </p>
                       </div>
                     </div>
-                    <!-- event 4 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -3503,7 +4319,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                     
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -3516,17 +4332,17 @@
                     </div>
                   </div>
                 </div>
-                <!-- Friday Event-->
+               
                 <div
                   class="opacity-100 transition-opacity duration-150 ease-linear hidden"
                 >
                   <div class="flex flex-col gap-y-6">
-                    <!-- event 1 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                     
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__4.png"
@@ -3534,7 +4350,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                     
                       <div class="py-18px">
                         <div>
                           <p
@@ -3573,7 +4389,7 @@
                       </div>
                     </div>
 
-                    <!-- event 2 -->
+                   
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -3614,7 +4430,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                     
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -3626,12 +4442,12 @@
                       </div>
                     </div>
 
-                    <!-- event 3 -->
+                   
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:items-star bg-whiteColor dark:whiteColor-dark p-15px md:p-5 transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
                     >
-                      <!-- event thumb -->
+                     
                       <div class="flex-shrink-0">
                         <img
                           src="./assets/images/event/event__3.png"
@@ -3639,7 +4455,7 @@
                           class="w-170px"
                         >
                       </div>
-                      <!-- event content -->
+                     
                       <div class="py-18px">
                         <div>
                           <p
@@ -3677,7 +4493,7 @@
                         </p>
                       </div>
                     </div>
-                    <!-- event 4 -->
+                    
                     <div
                       class="flex flex-col md:flex-row md:gap-30px lg:gap-10 items-center md:justify-between bg-whiteColor dark:whiteColor-dark p-15px md:p-5 md:pl-45px transition-all duration-300 group hover:text-whiteColor hover:bg-primaryColor dark:bg-whiteColor-dark dark:hover:bg-primaryColor shadow-experience rounded"
                       data-aos="fade-up"
@@ -3718,7 +4534,7 @@
                           </a>
                         </p>
                       </div>
-                      <!-- event thumb -->
+                     
                       <div
                         class="flex-shrink-0 flex flex-col items-center md:items-end"
                       >
@@ -3735,7 +4551,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Testimonial Section-->
       <section
@@ -3755,7 +4571,7 @@
             <h3
               class="text-3xl md:text-[35px] lg:text-size-38 3xl:text-size-42 leading-10 mf:leading-45px 2xl:leading-50px 3xl:leading-2xl font-bold text-blackColor dark:text-blackColor-dark text-center"
             >
-              Client
+              Student
               <span
                 class="relative after:w-full after:h-[7px] z-0 after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:z-[-1]"
                 >Testimonial</span
@@ -3771,7 +4587,7 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <!-- testimonial 1 -->
-                <div class="swiper-slide px-15px">
+                <div class="swiper-slide px-15px shadow-md">
                   <div
                     class="p-5 md:p-10 md:pr-50px md:pb-50px bg-whiteColor dark:bg-whiteColor-dark rounded"
                   >
@@ -3816,8 +4632,8 @@
                       </div>
                     </div>
                     <div>
-                      <p class="text-contentColor dark:text-contentColor-dark">
-                        Navi Digital Academy provided me with hands-on training and expert mentorship, helping me gain real-world IT skills.
+                     <p class="text-contentColor dark:text-contentColor-dark">
+                        Navi Digital Academy provided me with hands-on training and expert mentorship, helping me gain real-world IT skills. The instructors were approachable and always encouraged me to ask questions. I gained confidence through practical tasks and mock interviews, which played a key role in landing my first job as a Software Engineer.
                       </p>
                     </div>
                   </div>
@@ -3868,8 +4684,9 @@
                       </div>
                     </div>
                     <div>
+                      <!-- testimonial 2 -->
                       <p class="text-contentColor dark:text-contentColor-dark">
-                        The workshops gave me practical exposure, making my transition into the tech industry seamless.
+                        The workshops gave me practical exposure, making my transition into the tech industry seamless. The UI/UX sessions were highly interactive and project-driven, helping me build a solid portfolio. I truly appreciated the personalized feedback and one-on-one sessions with mentors, which helped me understand design from a real-world perspective.
                       </p>
                     </div>
                   </div>
@@ -3919,8 +4736,9 @@
                       </div>
                     </div>
                     <div>
+                      <!-- testimonial 3 -->
                       <p class="text-contentColor dark:text-contentColor-dark">
-                        Expert-led sessions on AI and digital marketing helped me upskill and secure a great job opportunity.
+                        Expert-led sessions on AI and digital marketing helped me upskill and secure a great job opportunity. The curriculum was constantly updated to match current trends, and the assignments were thoughtfully crafted to build job-ready skills. I also benefited greatly from the guest lectures and career-focused webinars.
                       </p>
                     </div>
                   </div>
@@ -3970,8 +4788,9 @@
                       </div>
                     </div>
                     <div>
+                      <!-- testimonial 4 -->
                       <p class="text-contentColor dark:text-contentColor-dark">
-                        The career guidance and industry collaborations at Navi Digital Academy prepared me for a successful IT career.
+                        The career guidance and industry collaborations at Navi Digital Academy prepared me for a successful IT career. From resume building to mock interviews, they covered every aspect. The collaborative environment helped me learn team dynamics and real-time project execution, which was essential in my role as a Data Scientist.
                       </p>
                     </div>
                   </div>
@@ -3987,6 +4806,9 @@
           </div>
         </div>
       </section>
+
+
+      
       <!-- Barnds Section-->
       <section class="bg-lightGrey10 dark:bg-lightGrey10-dark">
         <div class="container pb-60px">
@@ -4002,54 +4824,34 @@
               > with Institutions
             </h3>
           </div>
-          <!-- brands -->
-          <div class="flex flex-wrap justify-center">
-            <!-- brand 1 -->
-            <div class="basis-1/2 md:basis-1/4 lg:basis-1/5" data-aos="fade-up">
-              <a
-                href="#"
-                class="pt-25px pb-45px text-center w-full flex justify-center"
-              >
-                <img src="./assets/images/brand/Screenshot 2025-03-21 152548.png" alt="" >
-              </a>
+
+          <div class="flex justify-center">
+
+            <div class="flex flex-nowrap gap-5 overflow-x-auto px-4 py-4">
+              <!-- Card 1: Brand 1 & 2 -->
+              <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 items-center justify-center min-w-[220px] h-[100px] mr-10" data-aos="fade-up">
+                <img src="./assets/images/brand/Screenshot 2025-03-21 155952.png" alt="Brand 5" class="object-contain" style="width: 120px;">
+                <img src="./assets/images/brand/Screenshot 2025-03-21 154743.png" alt="Brand 2" class="object-contain" style="width: 120px;">
+              </div>
+
+              <!-- Card 2: Brand 3 & 4 -->
+              <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 items-center justify-center min-w-[220px] h-[100px] mr-10" data-aos="fade-up">
+                <img src="./assets/images/brand/image.png" alt="Brand 3" class="object-contain" style="width: 120px">
+                <img src="./assets/images/brand/Screenshot 2025-03-21 155612.png" alt="Brand 4" class="object-contain" style="width: 120px">
+              </div>
+
+              <!-- Card 3: Brand 1 only -->
+              <div class="bg-white rounded-lg shadow-md p-4 flex items-center justify-center min-w-[220px] h-[100px]" data-aos="fade-up">
+                <img src="./assets/images/brand/Screenshot 2025-03-21 152548.png" alt="Brand 1" class="object-contain" style="width: 120px">
+              </div>
             </div>
-            <!-- brand  -->
-            <div class="basis-1/2 md:basis-1/4 lg:basis-1/5" data-aos="fade-up">
-              <a
-                href="#"
-                class="pt-25px pb-45px text-center w-full flex justify-center"
-              >
-                <img src="./assets/images/brand/Screenshot 2025-03-21 154743.png" alt="" >
-              </a>
-            </div>
-            <!-- brand 3 -->
-            <div class="basis-1/2 md:basis-1/4 lg:basis-1/5" data-aos="fade-up">
-              <a
-                href="#"
-                class="pt-25px pb-45px text-center w-full flex justify-center"
-              >
-                <img src="./assets/images/brand/image.png" alt="" >
-              </a>
-            </div>
-            <!-- brand 4 -->
-            <div class="basis-1/2 md:basis-1/4 lg:basis-1/5" data-aos="fade-up">
-              <a
-                href="#"
-                class="pt-25px pb-45px text-center w-full flex justify-center"
-              >
-                <img src="./assets/images/brand/Screenshot 2025-03-21 155612.png" alt="" >
-              </a>
-            </div>
-            <!-- brand 5 -->
-            <div class="basis-1/2 md:basis-1/4 lg:basis-1/5" data-aos="fade-up">
-              <a
-                href="#"
-                class="pt-25px pb-45px text-center w-full flex justify-center"
-              >
-                <img src="./assets/images/brand/Screenshot 2025-03-21 155952.png" alt="" >
-              </a>
-            </div>
+
           </div>
+
+
+
+
+
         </div>
       </section>
       <!-- News and blog section -->
@@ -4389,21 +5191,23 @@
             <p class="text-whiteColor text-opacity-65">
               Don’t wait, make a smart & logical quote here. It’s pretty easy.
             </p>
-            <form
-              class="max-w-form-xl md:max-w-form-md lg:max-w-form-lg xl:max-w-form-xl 2xl:max-w-form-2xl bg-deepgray ml-auto rounded relative mt-4"
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="text-whiteColor h-62px pl-15px pr-90px focus:outline-none border border-deepgray focus:border-whitegrey bg-transparent rounded w-full md:w-96 lg:w-[500px]"
-                >
-              <button
-                type="submit"
-                class="px-2 md:px-8px lg:px-3 bg-primaryColor hover:bg-deepgray text-xs lg:text-size-15 text-whiteColor border border-primaryColor block rounded absolute right-0 top-0 h-full"
-              >
-                Submit
-              </button>
-            </form>
+<form
+  class="max-w-form-xl md:max-w-form-md lg:max-w-form-lg xl:max-w-form-xl 2xl:max-w-form-2xl bg-deepgray ml-auto rounded relative mt-4"
+>
+  <input
+    type="email"
+    placeholder="Enter your email"
+    class="text-whiteColor h-62px pl-3 pr-24 focus:outline-none border border-deepgray focus:border-whitegrey bg-transparent rounded w-full md:w-[500px] lg:w-[650px]"
+  >
+  <button
+    type="submit"
+    class="px-3 bg-primaryColor hover:bg-deepgray text-xs lg:text-sm text-whiteColor border border-primaryColor block rounded absolute right-0 top-0 h-full"
+  >
+    Submit
+  </button>
+</form>
+
+
           </div>
         </div>
         </section>

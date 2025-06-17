@@ -3488,7 +3488,7 @@ video {
 }
 
 .bg-transparent{
-  background-color: transparent;
+   background-color: transparent !important;
 }
 
 .bg-white{
@@ -7374,7 +7374,7 @@ video {
 
   .md\:text-base{
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-lg{
