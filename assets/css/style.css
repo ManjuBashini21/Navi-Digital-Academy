@@ -9271,3 +9271,61 @@ video {
 .mil-form button:hover {
   background: rgb(0 72 142 / var(--tw-bg-opacity));
 }
+
+
+.image-section {
+  padding: 40px 0;
+  
+}
+
+.image-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.image-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap; /* wraps if screen is too small */
+   transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+#main-navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
