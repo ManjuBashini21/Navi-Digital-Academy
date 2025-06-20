@@ -588,7 +588,7 @@
       <!-- comment form section -->
       <section>
         <div class="container pb-100px">
-          <form id="contact-form" action="mail.php" method="post" class="contact-form p-5 md:p-70px md:pt-90px border border-borderColor2 dark:border-transparent dark:shadow-container" data-aos="fade-up" >
+          <form id="contact-form" class="contact-form p-5 md:p-70px md:pt-90px border border-borderColor2 dark:border-transparent dark:shadow-container" data-aos="fade-up" >
             <!-- heading -->
             <div class="mb-10">
               <h4
@@ -659,9 +659,10 @@
             </div>
 
             <div class="mt-30px" data-aos="fade-up">
-              <button value="submit" name="submit" class="text-size-15 text-whiteColor bg-primaryColor px-25px py-10px border border-primaryColor hover:text-primaryColor hover:bg-whiteColor inline-block rounded group dark:hover:text-whiteColor dark:hover:bg-whiteColor-dark"
+              <button  type="submit" value="submit" name="submit" class="mt-6 px-6 py-3 bg-primaryColor text-white font-semibold text-sm rounded-md hover:bg-opacity-90 transition duration-300"
+  
               >
-                Post a Comment
+                 Send Message
               </button>
 
               <p class="form-messege"></p>
@@ -671,6 +672,8 @@
         </div>
       </section>
     </main>
+
+
     <footer class="bg-darkblack"> 
       <div class="container-fluid-2 pt-65px pb-5 lg:pb-10">
         <!-- footer top or subscription -->
@@ -881,6 +884,48 @@
         </div>
       </div>
     </footer>
+
+
+
+    <!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  // Initialize EmailJS
+  (function () {
+    emailjs.init("M8hGUkB0sgq10b1Tf"); // e.g., emailjs.init("HvI0m4x23N8-aabcX");
+  })();
+
+  // Form submission handler
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Optional: Disable button while sending
+      const submitButton = form.querySelector("button[type='submit']");
+      submitButton.disabled = true;
+      submitButton.innerText = "Sending...";
+
+      emailjs.sendForm("service_g13af5c", "template_x7y6pv3", form)
+        .then(function () {
+          alert("Message sent successfully!");
+          form.reset(); // Clear the form
+          submitButton.disabled = false;
+          submitButton.innerText = "Send Message";
+        }, function (error) {
+          console.error("Failed...", error);
+          alert("Failed to send message. Please try again.");
+          submitButton.disabled = false;
+          submitButton.innerText = "Send Message";
+        });
+    });
+  });
+</script>
+
+
+
+
        <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/isotope.pkgd.min.js"></script>
     <script src="./assets/js/accordion.js"></script>
