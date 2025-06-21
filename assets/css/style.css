@@ -9162,97 +9162,138 @@ video {
 }
 
 
+
+/* Overlay */
 .mil-modal {
-  display: none;
+  display: none; /* hidden by default */
   position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  padding: 20px;
 }
 
+/* Show the modal */
 .mil-modal.show {
   display: flex !important;
   opacity: 1;
 }
 
-
-.mil-modal-content {
+/* Center box inside modal */
+.mil-modal-box {
   background: white;
-  padding: 30px; 
-  border-radius: 10px;
-  width: 500px; 
-  text-align: left;
+  border-radius: 12px;
+  padding: 30px;
+  width: 1100px;
+  max-width: 95vw;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Close button */
 .mil-close {
   position: absolute;
+  top: 15px;
   right: 15px;
-  top: 10px;
-  font-size: 26px;
-  cursor: pointer;
-  color: rgb(0 72 142 / var(--tw-bg-opacity));
-  transition: 0.3s;
-}
-
-.mil-close:hover {
-  color: rgb(0 72 142 / var(--tw-bg-opacity));
-}
-
-
-.mil-modal-title {
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: rgb(0 72 142 / var(--tw-bg-opacity));
+  color: #00488e;
+  cursor: pointer;
+}
+
+/* Title */
+.mil-modal-title {
   text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #00488e;
+  margin-bottom: 25px;
+}
+
+/* Body layout */
+.mil-modal-body {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left content */
+.mil-modal-left {
+  flex: 1;
 }
 
 .mil-modal-subtitle {
-  font-size: 16px;
   font-weight: 600;
-  margin-top: 15px;
+  font-size: 16px;
+  margin-bottom: 15px;
   color: #444;
 }
 
-
 .mil-modal-list {
-  list-style-type: disc;
-  padding-left: 1.2rem;
-  margin: 5px 0 15px;
-  color: #666;
-  font-size: 14px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .mil-modal-list li {
-  position: relative;
   padding-left: 1.8rem;
+  position: relative;
   margin-bottom: 1rem;
-  line-height: 1.6;
-  color: #333;
   font-size: 1rem;
   font-weight: 500;
+  color: #333;
+  line-height: 1.6;
 }
 
 .mil-modal-list li::before {
   content: "✔";
   position: absolute;
   left: 0;
-  top: 0.1rem;
   color: #f7ab09;
-  font-size: 1rem;
+  top: 0.1rem;
 }
+
+.mil-modal-right img{
+  width: 250px; /* increased slightly for spacing */
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mil-modal-image img{
+  width: 200px;
+  height: 280px;
+  object-fit: contain;
+  border-radius: 10px;
+
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mil-modal-body {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mil-modal-right {
+    width: 100%;
+  }
+
+  .mil-modal-image {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
 
 
 .mil-form {
