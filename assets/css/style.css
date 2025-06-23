@@ -9366,6 +9366,11 @@ video {
 #main-navbar {
   background-color: black;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+nav{
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
 /* When scrolled: white background with shadow */
