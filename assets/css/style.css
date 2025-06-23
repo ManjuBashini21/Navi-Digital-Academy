@@ -97,7 +97,6 @@ h6 {
 
 .sticky-header.active {
   background: var(--whiteColor);
-  box-shadow: 0 0 50px 10px rgba(45, 144, 237, 0.15);
 }
 
 /* tab */
@@ -373,12 +372,10 @@ h6 {
 }
 
 .create-course .active .accordion-controller:focus {
-  box-shadow: 0 0 0 0.25rem var(--blue2);
   border-bottom: 1px solid transparent;
 }
 
 .create-course .accordion-controller:focus {
-  box-shadow: 0 0 0 0.25rem var(--blue2);
 }
 
 /* faq */
@@ -4867,7 +4864,7 @@ video {
 
 .text-secondaryColor{
   --tw-text-opacity: 1;
-  color: rgb(247 168 0 / var(--tw-text-opacity));
+  color: #fba700;
 }
 
 .text-secondaryColor2{
@@ -5790,7 +5787,7 @@ video {
 
 .hover\:text-secondaryColor:hover{
   --tw-text-opacity: 1;
-  color: rgb(247 168 0 / var(--tw-text-opacity));
+  color: #fba700;
 }
 
 .hover\:text-whiteColor:hover{
@@ -5962,7 +5959,7 @@ video {
 
 .group:hover .group-hover\:text-secondaryColor{
   --tw-text-opacity: 1;
-  color: rgb(247 168 0 / var(--tw-text-opacity));
+  color: #fba700;
 }
 
 .group:hover .group-hover\:text-white{
@@ -6343,7 +6340,7 @@ video {
 
 :is(.dark .dark\:hover\:text-secondaryColor:hover){
   --tw-text-opacity: 1;
-  color: rgb(247 168 0 / var(--tw-text-opacity));
+  color: #fba700;
 }
 
 :is(.dark .dark\:hover\:text-whiteColor:hover){
@@ -9261,7 +9258,7 @@ video {
 }
 
 .mil-modal-right img{
-  width: 250px; /* increased slightly for spacing */
+  width: 250px; 
   height: 300px;
   display: flex;
   justify-content: center;
@@ -9273,8 +9270,99 @@ video {
   height: 280px;
   object-fit: contain;
   border-radius: 10px;
-
 }
+
+.mil-modal-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mil-modal-button {
+  display: inline-block;
+  background-color: #00488e;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.mil-modal-button:hover {
+  background-color: #003366;
+}
+
+.read-more-link {
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.group:hover .read-more-link  {
+  color: #f7ab09;
+  border-bottom-color: #f7ab09;
+}
+
+.mou-card {
+  background-color: #fba700;
+  border-radius: 14px;
+  padding: 45px 35px;
+  width: 550px;
+  min-height: 300px;
+  transition: all 0.3s ease;
+}
+
+.mou-card:hover {
+  background-color: rgb(0 72 142 / var(--tw-bg-opacity)); /* Lighter shade on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.learn-card {
+  background-color: rgb(0 72 142 / var(--tw-bg-opacity)); 
+  border-radius: 14px;
+  padding: 45px 35px;
+  width: 550px;
+  min-height: 300px;
+  transition: all 0.3s ease;
+}
+
+.learn-card:hover {
+  background-color: #fba700; /* Lighter shade on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.privacy-card {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-left: 5px solid #00488e;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.privacy-card:hover {
+  background-color: #eef6fb;
+  border-left-color: #f7ab09;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 72, 142, 0.12);
+}
+
+
+.privacy-policy{
+  max-width: 900px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+
+
 
 
 /* Responsive */
