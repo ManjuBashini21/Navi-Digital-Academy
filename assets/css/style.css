@@ -4859,7 +4859,7 @@ video {
 
 .text-primaryColor{
   --tw-text-opacity: 1;
-  color: rgb(0 72 142 / var(--tw-text-opacity));
+  color:#fba700;;
 }
 
 .text-secondaryColor{
@@ -8102,9 +8102,9 @@ video {
     padding-bottom: 0px;
   }
 
-  .lg\:pb-10{
+  /* .lg\:pb-10{
     padding-bottom: 2.5rem;
-  }
+  } */
 
   .lg\:pb-150px{
     padding-bottom: 9.375rem;
@@ -8999,6 +8999,7 @@ video {
 
   .\32xl\:leading-9{
     line-height: 2.25rem;
+    padding-bottom: 50px;
   }
 
   .\32xl\:leading-90px{
@@ -9502,4 +9503,28 @@ nav{
 
 #main-navbar {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.custom-overlay-section {
+  background-color: #00488E; /* Replace with your desired blue dark */
+  opacity: 0.9;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  z-index: 0;
+}
+
+@media (min-width: 1024px) {
+  .custom-overlay-section {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+}
+
+
+.hero-logo{
+  width: 250px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
