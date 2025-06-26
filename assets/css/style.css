@@ -9525,6 +9525,10 @@ nav{
 
 .hero-logo{
   width: 250px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.card-padding {
+  padding: 45px; /* or whatever you want */
 }
